@@ -35,7 +35,7 @@ public class Manager {
     }
 
     @OneToOne
-    @JoinColumn(name = "team_id", nullable = false)
+    @JoinColumn(name = "team_id")
     public Team getTeam() {
         return team;
     }

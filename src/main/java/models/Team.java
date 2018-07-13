@@ -56,7 +56,7 @@ public class Team {
     }
 
     @ManyToOne
-    @JoinColumn(name = "competition_id", nullable = false)
+    @JoinColumn(name = "competition_id")
     public Competition getCompetition() {
         return competition;
     }
