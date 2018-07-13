@@ -46,14 +46,13 @@ public class Competition {
         this.type = type;
     }
 
-//    @OneToMany
-//    @Column(name = "teams")
-//    public List<Team> getTeams() {
-//        return teams;
-//    }
-//    public void setTeams(List<Team> teams) {
-//        this.teams = teams;
-//    }
+    @OneToMany(mappedBy = "competition", fetch = FetchType.LAZY)
+    public List<Team> getTeams() {
+        return teams;
+    }
+    public void setTeams(List<Team> teams) {
+        this.teams = teams;
+    }
 
 
 }
